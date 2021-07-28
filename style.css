@@ -6,8 +6,7 @@
     --accent-color-main: #D8330F;
     --accent-color-secondary: #EBAC0B;
 }
-/* font-family: 'Aleo', serif; */
-/* font-family: 'Roboto', sans-serif; */
+
 body {
     color: var(--text-main);
     background-color: var(--background-color);
@@ -89,21 +88,23 @@ header hr {
     display: grid;
     grid-template-areas: 'global region'
                          'global map';
+    margin-bottom: 3rem;
 }
 
-.stats-title {
+.title {
     text-align: center;
 }
 
-.stats-title h2 {
+.title h2 {
     font-family: 'Aleo', serif;
     font-size: 2rem;
     margin: 1rem 0;
 }
 
-.stats-title p {
+.title p {
     font-weight: 100;
     font-size: 0.9rem;
+    margin-bottom: 2rem;
 }
 
 .stats-region {
@@ -214,4 +215,39 @@ header hr {
     position: absolute;
     bottom: 80px;
     right: 130px;
+}
+
+.precautions-item {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.precautions-item > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precautions-step {
+    position: relative;
+}
+
+.precautions-step p {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 0;
+}
+
+.precautions-text {
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.precautions-item:nth-child(even) .precautions-text {
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 100;
 }
